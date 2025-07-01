@@ -7,6 +7,7 @@ export default new DataSource({
   username: 'postgres',
   password: '123456',
   database: 'booking_app',
+  entities: ['dist/**/*.entity.js'],
   migrations: ['dist/src/migrations/*.js'],
   synchronize: false,
 });
